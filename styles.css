@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#top-bar {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px 0 0;
+    height: 79px;
+}
+
+#logo {
+    background-image: url('./assets/z-logo-default.svg');
+    background-size: cover;
+    width: 160px;
+    height: 35px;
+    margin: 24px auto auto;
+}
+
+#left-nav, #right-nav {
+    display: flex;
+}
+
+#right-nav-profile {
+    background-image: url('./assets/profile-icon.svg');
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: auto 22px auto auto;
+}
+
+.nav-button {
+    padding: 12px 14px 13px;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    color: rgb(0, 106, 255);
+}
+
+@media (max-width: 890px) {
+    #top-bar {
+        padding: 0 16px;
+        height: 60px;
+    }
+
+    #logo {
+        width: 25px;
+        height: 25px;
+        margin: auto auto auto 0;
+        position: relative;
+        left: 0;
+    }
+}
